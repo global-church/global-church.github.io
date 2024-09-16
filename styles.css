@@ -1,0 +1,75 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    background-color: #00263A;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+.pillars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.pillar {
+    flex: 1 1 22%; /* Ensures each pillar takes up about a quarter of the space on large screens */
+    margin: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pillar img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #004C75;
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #00263A;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .pillar {
+        flex: 1 1 45%; /* Two columns on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .pillar {
+        flex: 1 1 100%; /* Stack pillars on mobile */
+    }
+}
